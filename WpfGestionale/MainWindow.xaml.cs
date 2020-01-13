@@ -31,9 +31,24 @@ namespace WpfGestionale
 
         private void btnAdd_Click(object sender, RoutedEventArgs e)
         {
-            var oggetto = txtOggetto.Text;
-            StreamReader x = new StreamReader(file, Encoding.UTF8);
-            
+            using (StreamWriter xoggetti = new StreamWriter(file, true))
+            {
+                string oggetto = txtOggetto.Text;
+                string prezzo = txtPrezzo.Text;
+                xoggetti.WriteLine($"{oggetto}  {prezzo} €");
+            }
+        }
+
+        private void btnVediLista_Click(object sender, RoutedEventArgs e)
+        {
+            using (StreamReader rdfile = new StreamReader(file))
+            {
+                string sline;
+                while ((sline = rdfile.ReadLine()) != null)
+                {
+                    lstOggetti.Items.Add(sline.ToString());
+                }
+            }
         }
     }
 }

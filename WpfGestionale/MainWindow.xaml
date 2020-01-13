@@ -7,9 +7,14 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <TextBox Name="txtOggetto" HorizontalAlignment="Left" Height="80" Margin="90,55,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="280" FontSize="16" FontWeight="Bold"/>
-        <Button Name="btnAdd" Content="AGGIUNGI OGGETTO" HorizontalAlignment="Left" Margin="475,68,0,0" VerticalAlignment="Top" Width="165" Height="47" FontSize="16" FontWeight="Bold" FontFamily="Shonar Bangla" Click="btnAdd_Click"/>
-        <ListBox Name="lstOggetti" HorizontalAlignment="Left" Height="205" Margin="280,190,0,0" VerticalAlignment="Top" Width="235"/>
+        <TextBox Name="txtOggetto" HorizontalAlignment="Left" Height="80" Margin="45,65,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="280" FontSize="16" FontWeight="Bold"/>
+        <Button Name="btnAdd" Content="AGGIUNGI" HorizontalAlignment="Left" Margin="600,80,0,0" VerticalAlignment="Top" Width="120" Height="47" FontSize="16" FontWeight="Bold" FontFamily="Shonar Bangla" Click="btnAdd_Click"/>
+        <ListBox Name="lstOggetti" HorizontalAlignment="Left" Height="205" Margin="45,201,0,0" VerticalAlignment="Top" Width="235" FontSize="16" FontWeight="Bold"/>
+        <Button Name="btnVediLista" Content="VISUALIZZA LISTA" HorizontalAlignment="Left" Margin="585,158,0,0" VerticalAlignment="Top" Width="165" Height="47" FontSize="16" FontWeight="Bold" FontFamily="Shonar Bangla" Click="btnVediLista_Click"/>
+        <Label Content="LISTA OGGETTI:" HorizontalAlignment="Left" Margin="45,158,0,0" VerticalAlignment="Top" Width="185" Height="38" FontSize="18" FontWeight="Bold" FontFamily="SimHei" Foreground="Red"/>
+        <Label Content="INSERISCI OGGETTO:" HorizontalAlignment="Left" Margin="45,18,0,0" VerticalAlignment="Top" Width="295" Height="38" FontSize="18" FontWeight="Bold" FontFamily="SimHei" Foreground="Red"/>
+        <TextBox Name="txtPrezzo" HorizontalAlignment="Left" Height="80" Margin="365,65,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="145" FontSize="16" FontWeight="Bold"/>
+        <Label Content="INSERISCI PREZZO:" HorizontalAlignment="Left" Margin="365,18,0,0" VerticalAlignment="Top" Width="185" Height="38" FontSize="18" FontWeight="Bold" FontFamily="SimHei" Foreground="Red"/>
 
     </Grid>
 </Window>
